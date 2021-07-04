@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nwapp.ThirdFragment"
+    >
+
+    <ImageView
+        android:id="@+id/maru"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/maru"
+        android:alpha="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="invisible"
+        android:elevation="2dp"
+
+        />
+
+    <ImageView
+        android:id="@+id/batu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.5"
+        android:src="@drawable/batu"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="2dp"
+        />
+
+    <TextView
+        android:id="@+id/warekiText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="令和1年午前Ⅱ問"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="5dp"
+        />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toTopOf="@id/select1Button"
+        app:layout_constraintTop_toBottomOf="@+id/warekiText">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/problemText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="24sp"
+                />
+
+            <ImageView
+                android:id="@+id/problemView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:src=""
+                />
+
+            <TextView
+                android:id="@+id/select1Text"
+                android:textSize="22sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+            <ImageView
+                android:id="@+id/select1View"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:src="" />
+
+            <TextView
+                android:id="@+id/select2Text"
+                android:textSize="22sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+            <ImageView
+                android:id="@+id/select2View"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:src="" />
+
+
+
+            <TextView
+                android:id="@+id/select3Text"
+                android:textSize="22sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+            <ImageView
+                android:id="@+id/select3View"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:src="" />
+
+            <TextView
+                android:textSize="22sp"
+                android:id="@+id/select4Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="" />
+            <ImageView
+                android:id="@+id/select4View"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:src="" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/select1Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:text="ア"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/select2Button"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+
+
+        />
+
+    <Button
+        android:id="@+id/select2Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="イ"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/select1Button"
+        app:layout_constraintEnd_toStartOf="@id/select3Button"
+        android:layout_margin="1dp"
+        app:layout_constraintHorizontal_chainStyle="spread"
+
+        />
+
+    <Button
+        android:id="@+id/select3Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="ウ"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/select2Button"
+        app:layout_constraintEnd_toStartOf="@id/select4Button"
+        android:layout_margin="1dp"
+        app:layout_constraintHorizontal_chainStyle="spread"
+
+        />
+
+    <Button
+        android:id="@+id/select4Button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="エ"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/select3Button"
+        app:layout_constraintEnd_toStartOf="@id/nextButton"
+        android:layout_margin="1dp"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        />
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="≫"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/select4Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="1dp"
+        app:layout_constraintHorizontal_chainStyle="spread"
+
+        />
+    <Button
+        android:id="@+id/ExplanationButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="解説"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@id/nextButton"
+        app:layout_constraintStart_toEndOf="@id/select4Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constrainedWidth="true"
+        android:layout_margin="1dp"
+
+
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

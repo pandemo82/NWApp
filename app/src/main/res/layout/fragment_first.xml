@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nwapp.FirstFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+<Space
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+        />
+        
+    <TextView
+        android:id="@+id/textview_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="ネットワークスペシャリスト試験"
+        android:textSize="24sp"
+        android:outlineProvider="@color/black"
+        />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            />
+
+<!--        <Button-->
+<!--            android:id="@+id/selectYear"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="25dp"-->
+<!--            android:padding="15dp"-->
+<!--            android:text="年度選択(準備中)" />-->
+
+
+        <Button
+            android:id="@+id/allYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:padding="15dp"
+            android:text="ランダム出題" />
+
+<!--        <Button-->
+<!--            android:id="@+id/allYearWithoutCalc"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="25dp"-->
+<!--            android:padding="15dp"-->
+<!--            android:text="全問シャッフル(計算問題なし)(準備中)" />-->
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

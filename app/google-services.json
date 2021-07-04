@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "721800784011",
+    "firebase_url": "https://nwapp6s-default-rtdb.firebaseio.com",
+    "project_id": "nwapp6s",
+    "storage_bucket": "nwapp6s.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:721800784011:android:e3a54245f83019e5218c8e",
+        "android_client_info": {
+          "package_name": "com.example.nwapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "721800784011-shaa8qeammtb90vof8a3lm83m8ndesmn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwyBduHRJNEWxUlTaSP2deyfjZupTt1YI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "721800784011-shaa8qeammtb90vof8a3lm83m8ndesmn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
